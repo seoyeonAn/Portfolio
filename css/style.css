@@ -29,31 +29,34 @@ body  {
 .container {
     width: 1200px;
     background-color: #fff;
-    margin: 60px auto;
+    margin: 70px auto;
     border: 1px solid palevioletred;
 }
 .content    {
-    width: 480px;
-    margin: 0 auto;
+    width: 600px;
+    margin: 100px auto;
 }
 .title_txt  {
-    width: 480px;
+    width: 600px;
     margin: 0 auto;
     padding: 130px 0;
-    /* padding-bottom: 140px; */
+    padding-top: 60px;
+    padding-bottom: 50px;
 }
 .main_title p {
     font-family: 'DungGeunMo';
-    font-size: 30pt;
+    /* font-size: 30pt; */
     color: #D2A9A9;
     text-align: center;
-    line-height: 20px;
+    line-height: 8px;
 }
 .navArea    {
-    padding-bottom: 120px;
+    width: 600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .nav    {
-    width: 480px;
+    width: 440px;
     margin: 0 auto;
 }
 .nav > li {
