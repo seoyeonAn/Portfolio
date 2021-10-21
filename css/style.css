@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* reset */
+a,p,span,h1,h2,h3,h4,h5,h6,ul,li {
+    list-style: none;
+    text-decoration: none;
+    color: #5e5e5e;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+
+
+body  {
+    background-color: #FECDCD;
+}
+.wrap {
+    width: 1500px;
+    margin: 0 auto;
+}
+.container {
+    width: 1200px;
+    background-color: #fff;
+    margin: 60px auto;
+    border: 1px solid palevioletred;
+}
+.content    {
+    width: 480px;
+    margin: 0 auto;
+}
+.title_txt  {
+    width: 480px;
+    margin: 0 auto;
+    padding: 130px 0;
+    /* padding-bottom: 140px; */
+}
+.main_title p {
+    font-family: 'DungGeunMo';
+    font-size: 30pt;
+    color: #D2A9A9;
+    text-align: center;
+    line-height: 20px;
+}
+.navArea    {
+    padding-bottom: 120px;
+}
+.nav    {
+    width: 480px;
+    margin: 0 auto;
+}
+.nav > li {
+    float: left;
+    padding: 0 40px;
+}
+.nav > li:first-child   {
+    padding-left: 0;
+}
+.nav > li:last-child    {
+    padding-right: 0;
+}
+.nav a  {
+    text-align: center;
+    font-size: 13px;
+}
