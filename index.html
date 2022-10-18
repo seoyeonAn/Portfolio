@@ -4,53 +4,218 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png"> -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <!-- <link rel="manifest" href="/site.webmanifest"> -->
-    <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffa3b2"> -->
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  
     <title>Portfolio</title>
 </head>
 <body>
     <div class="wrap">
-        <div class="container">
-            <div class="content">
-                 <div class="title_txt">
-                    <div class="main_title">
-                        <p style="font-size: 23pt;">WELCOME TO</p>
-                        <p style="font-size: 35pt;">SEO-YEON'S PORTFOLIO!</p>
-                    </div>
-                </div>
-                <div class="navArea clearfix">
-                        <ul class="nav">
-                        <li>
-                            <a href="#">
-                                <img src="http://placehold.it/80X80" alt="">
-                                <p>About Me</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="http://placehold.it/80X80" alt="">
-                                <p>Portfolio</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="http://placehold.it/80X80" alt="">
-                            <p>Contact</p>
-                            </a>
-                        </li>
-                    </ul>
+        <header id="header">
+            <div class="txt-Area">
+                <div class="txt-desc">
+                    <h1>Welcome to Seoyeon-An's Portfolio</h1>
+                    
                 </div>
             </div>
-           
-        </div>
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </header>
+        <section id="container">
+            <div id="about">
+                <div class="container">
+                    <div class="profile clearfix">
+                        <div class="pro-pic">
+                            <img src="./img/pro1.png" alt="">
+                        </div>
+                        <div class="pro-txt">
+                            <div class="sub-title">
+                                <h6>Profile.</h6>
+                            </div>
+                            <div class="desc">
+                                <span style="display: block;">안서연</span>
+                                <span>Seoyeon-An</span>
+                                <p>Since, 1996. 03. 01 ~</p>
+                                <p>2019.08 한디원 시각 디자인과 졸업</p>
+                                <p>2019.05 ~ 2019.10 더 좋은 아카데미<br>웹퍼블리셔(웹디자인)UI/UX 프론트엔드 양성과정 직업 훈련 수료</p>
+                                <p>2020.12 ~ 2021.06 에이콘 아캌데미 홍대학원<br>자바(JAVA)기반의 웹&앱 응용SW개발자 양성과정 직업 훈련 수료</p>
+                                <p>2021.22~2022.05 (주)뮤직아이티<br><small>(인원 축소로 인한 퇴사)</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="sub-title">
+                            <h6>skill.</h6>
+                        </div>
+                        <div class="desc">
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul>
+                                        <li>
+                                            <em>Ps</em>
+                                            <div class="progress">
+                                                <div class="progress-bar" data-file="90" role="progressbar" style="width: 0%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <em>Ai</em>
+                                            <div class="progress">
+                                                <div class="progress-bar" data-file="80" role="progressbar" style="width: 0%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <em>Id</em>
+                                            <div class="progress">
+                                                <div class="progress-bar" data-file="60" role="progressbar" style="width: 0%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul>
+                                        <li>
+                                            <em>Pr</em>
+                                            <div class="progress">
+                                                <div class="progress-bar" data-file="50" role="progressbar" style="width: 0%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <em>Ae</em>
+                                            <div class="progress">
+                                                <div class="progress-bar" data-file="50" role="progressbar" style="width: 0%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <em>H5</em>
+                                            <div class="progress">
+                                                <div class="progress-bar" data-file="70" role="progressbar" style="width: 0%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <em>C3</em>
+                                            <div class="progress">
+                                                <div class="progress-bar" data-file="70" role="progressbar" style="width: 0%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="license-Area">
+                        <div class="sub-title">
+                            <h6>License.</h6>
+                        </div>
+                        <div class="desc clearfix">
+                            <ul>
+                                <li class="lst-left">
+                                    <ul>
+                                        <li>
+                                            <span class="txt-b">자동차 운전면허 2종 보통 <small class="txt-s">2016.01.08</small></span>
+                                        </li>
+                                        <li>
+                                            <span class="txt-b">GTQ(크래픽기술자격)1급 <small class="txt-s">2018.08.17</small></span>
+                                        </li>
+                                        <li>
+                                            <span class="txt-b">웹디자인 기능사<small class="txt-s">2022.04.15</small></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="lst-right">
+                                    <ul>
+                                        <li>
+                                            <span class="txt-b">컬러리스트 산업기사 <small class="txt-s">2017.08.04</small></span>
+                                        </li>
+                                        <li>
+                                            <span class="txt-b">시각디자인 산업기사 <small class="txt-s">2018.12.21</small></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio">
+                <div class="container">
+                    <div class="pt_area">
+                        <div class="tab on">
+                            <h2>Teb1</h2>
+                            <div class="item clearfix">
+                                <ul class="teb1_item">
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/sulwhasoo_s.png" alt="설화수">
+                                            <span>밴치마킹 페이지</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/sm_s.png" alt="SM Town 회원가입 페이지">
+                                            <span>회원가입 페이지</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="./img/sm_s.png" alt="바늘과 실 이야기 반응형 홈페이지">
+                                            <span>반응형 페이지</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/seoyeonAn/BouquetGarni-Redesign.git" target="_blank">
+                                            <img src="./img/sm_s.png" alt="">
+                                            <span>리디자인 페이지<br><small>서브페이지 'brand'</small></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <h2>Teb2</h2>
+                            <div class="item">
+                                <ul class="teb2_item">
+                                    <li>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <h2>Teb2</h2>
+                            <div class="item">
+                                <ul class="teb2_item">
+                                    <li>
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact">
+                <div class="container">
+                    <div class="content-Area">
+                        <div class="pic-area">
+                            <img src="./img/pro2.png" alt="profile Pic2">
+                        </div>
+                        <div class="txt">
+                            <p>Tel. 010 5135 9090</p>
+                            <p>Email. toin9631@gamil.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./js/common.js"></script>
 </body>
 </html>
