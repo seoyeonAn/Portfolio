@@ -404,11 +404,21 @@ body::-webkit-scrollbar {
     transform: translate(-50%, -50%);
 }
 
+#modal .modal-1 img {
+    display: block;
+    width: 500px;
+}
+
 #modal .modal-2 {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+#modal .modal-2 img {
+    display: block;
+    width: 500px;
 }
 
 #modal .modal-3 {
@@ -417,11 +427,22 @@ body::-webkit-scrollbar {
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+#modal .modal-3 img {
+    display: block;
+    width: 500px;
+}
+
 #modal .modal-4 {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+#modal .modal-4 img {
+    display: block;
+    width: 500px;
 }
 
 /* // Portfolio */
