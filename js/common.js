@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 
       
-      if($(document).scrollTop() > skillOff.top - '1000') {
+      if($(document).scrollTop() > skillOff.top - '700') {
         $('.progress-bar').each(function(){
           var lens = $(this).attr('data-file');
           $(this).css({width: lens + '%'});
@@ -39,11 +39,33 @@ $(document).ready(function(){
       
     });
     
-
-
     $('.tab > h2').click(function(){
       $(this).parent('.tab').addClass('on')
         .siblings('.tab').removeClass('on');
     });
 
+    $("#portfolio .tab2_item > li > .lst-imagse > .lst-item1").click(function(){
+      $(".modal1, .modal-1").fadeIn();
+  });
+    $('#modal > .exit').click(function(){
+      $(".modal1, .modal-1").fadeOut();
+    });
+    $("#portfolio .tab2_item > li > .lst-imagse > .lst-item2").click(function(){
+      $(".modal2, .modal-2").fadeIn();
+  });
+    $('#modal > .exit').click(function(){
+      $(".modal2").fadeOut();
+    });
+    $("#portfolio .tab2_item > li > .lst-imagse > .lst-item3").click(function(){
+      $(".modal3, .modal-3").fadeIn();
+  });
+    $('#modal > .exit').click(function(){
+      $(".modal3, .modal-3").fadeOut();
+    });
+    $("#portfolio .tab2_item > li > .lst-imagse > .lst-item4").click(function(){
+      $(".modal4, .modal-4").fadeIn();
+  });
+    $('#modal > .exit').click(function(){
+      $(".modal4, .modal-4").fadeOut();
+    });
 });

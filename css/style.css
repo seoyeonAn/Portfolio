@@ -40,7 +40,7 @@ a,p,span,h1,h2,h3,h4,h5,h6,ul,li {
 }
 
 body {
-    background: #FFF9F9;
+    background: #FFF9F9 !important;
 }
 body::-webkit-scrollbar-thumb {
     width: 5px;
@@ -136,7 +136,7 @@ body::-webkit-scrollbar {
 }
 #header .nav li a {
     text-decoration: none; 
-    color: #757575; 
+    color: #FF9BAD; 
     text-transform: uppercase;
 }
 #header .nav li a:hover {
@@ -195,6 +195,7 @@ body::-webkit-scrollbar {
     padding: 20px;
     border: 1px solid #FF9BAD;
     border-radius: 0 0 30px 0;
+    background-color: #FFF;
 }
 
 /* skill */
@@ -264,10 +265,13 @@ body::-webkit-scrollbar {
 }
 #portfolio h2 {
     display: block; 
-    width: 72px; 
-    height: 72px; 
-    background-image: url(./../img/close.png); 
+    width: 64px; 
+    height: 64px; 
+    background-image: url(./../img/icon/close.png); 
     text-indent: -999em;
+}
+#portfolio h2 img {
+    width: 72px;
 }
 #portfolio .pt_area {
     padding-top: 150px; 
@@ -275,28 +279,26 @@ body::-webkit-scrollbar {
 }
 #portfolio .pt_area .tab {
     width: 200px;
-    border: 1px solid#FF9BAD; 
-    background-color: #FF9BAD;
     padding: 10px 20px; 
     margin: 20px;
     border-radius: 10px 0 0 10px;
+    border: 1px solid #FF9BAD;
 }
 #portfolio .pt_area .tab.on {
     display: block; 
     width: 200px; 
-    border: 1px solid #FF9BAD;
-    background-color: #fff;
+    background-color: #FFF;
     border-radius: 10px;
 }
 #portfolio .pt_area .tab.on h2 {
-    background-image: url(./../img/open.png);
+    background-image: url(./../img/icon/open.png);
 }
 #portfolio .pt_area .tab .item {
     display: none; 
     width: 800px;
     height: 700px; 
     max-height: 700px; 
-    background-color: #fff; 
+    background-color: #FFF; 
     border: 1px solid #FF9BAD;
     border-radius: 10px; 
     margin-left: 100px; 
@@ -307,6 +309,18 @@ body::-webkit-scrollbar {
     top: 130px; 
     left: 30px;
 }
+#portfolio .pf-title {
+    width: 650px;
+    margin: 0 auto;
+    background-color: #FF9BAD;
+    border-radius: 30px;
+    padding-left: 20px;
+    color: #FFF5E5;
+    margin-bottom: 20px;
+}
+#portfolio .lst-con {
+    padding: 0 30px;
+}
 #portfolio .pt_area .tab.on .item {
     display: block;
 }
@@ -315,23 +329,101 @@ body::-webkit-scrollbar {
 }
 #portfolio .pt_area .tab .item::-webkit-scrollbar-thumb {
     background-color: #FF9BAD; 
-    border-radius: 50px;
+    border-radius: 30px;
+}
+#portfolio .pt_area .tab .item ul {
+    width: 650px;
+    margin: 0 auto;
 }
 #portfolio .pt_area .tab .item li {
     position: relative; 
-    width: 250px;
+    width: 300px;
+    height: 250px;
+    margin: 0 auto;
     padding: 20px; 
     float: left;
 }
 #portfolio .pt_area .tab .item li a {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+#portfolio .pt_area .tab .item li a {
     text-decoration: none;
 }
-#portfolio .pt_area .tab .item li a span {
+#portfolio .pt_area .tab > .item li > a > span,small {
     display: block; 
-    text-align: center; 
-    padding-top: 15px; 
-    color: #aaa198;
+    text-align: center;
+    color: #666;
 }
+#portfolio .lst-con span {
+    padding-top: 10px;
+}
+#portfolio .lst-con li {
+    display: block;
+    width: 100px;
+
+}
+#portfolio .lst-imagse {
+    width: 250px;
+    display: block;
+    overflow: hidden;
+}
+#portfolio .lst-imagse img {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#modal {
+    width: 600px;
+    height: 600px;
+    border: 1px solid #FF9BAD;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 100000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+#modal .exit {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #FF9BAD;
+}
+
+#modal .modal-1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#modal .modal-2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#modal .modal-3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#modal .modal-4 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* // Portfolio */
 
 /* contact */
