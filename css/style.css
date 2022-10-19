@@ -122,6 +122,7 @@ body::-webkit-scrollbar {
 #header .nav {
     width: 513px; 
     margin: 0 auto;
+    z-index: 1000;
 }
 .navfixed {
     position: fixed; 
@@ -356,13 +357,17 @@ body::-webkit-scrollbar {
     text-align: center;
     color: #666;
 }
-#portfolio .lst-con span {
+#portfolio .lst-con .item-title
+{
     padding-top: 10px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
 }
 #portfolio .lst-con li {
     display: block;
     width: 100px;
-
+    position: relative;
 }
 #portfolio .lst-imagse {
     width: 250px;
@@ -373,6 +378,50 @@ body::-webkit-scrollbar {
     display: block;
     width: 250px;
     margin: 0 auto;
+}
+#portfolio li img.thumb {
+    display: block;
+    width: 250px;
+    height: 135px;
+    border: 1px solid #FF9BAD;
+    border-radius: 10px;
+}
+#portfolio li a > span.h-screen {
+    display: none;
+    width: 250px;
+    height: 134px;
+    position: absolute;
+}
+#portfolio li a > span.h-screen > p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: none;
+    font-size: 16px;
+}
+#portfolio li a .h-screen .play {
+    width: 46px;
+    height: 46px;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+#portfolio li a:hover .h-screen {
+    display: block;
+    background-color: rgba(200, 0, 0, 0.3);
+    z-index: 10;
+    border-radius: 10px;
+}
+#portfolio li a:hover .h-screen > p {
+    display: block;
+}
+#portfolio li a:hover .h-screen .play {
+    display: block;
 }
 
 #modal {
@@ -391,10 +440,25 @@ body::-webkit-scrollbar {
 
 #modal .exit {
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    left: 15px;
     font-size: 30px;
     color: #FF9BAD;
+}
+
+#modal .modalinner {
+    width: 550px;
+    height: 550px;
+    overflow: auto;
+}
+#modal .modalinner::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+}
+#modal .modalinner::-webkit-scrollbar-thumb {
+    background-color: #FF9BAD;
+    width: 5px;
+    border-radius: 10px;
 }
 
 #modal .modal-1 {
@@ -443,6 +507,12 @@ body::-webkit-scrollbar {
 #modal .modal-4 img {
     display: block;
     width: 500px;
+}
+
+#modal .modalinner .madal-txt {
+    font-size: 16px;
+    padding-left: 30px;
+    padding-top: 10px;
 }
 
 /* // Portfolio */
