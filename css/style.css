@@ -444,6 +444,7 @@ body::-webkit-scrollbar {
     left: 15px;
     font-size: 30px;
     color: #FF9BAD;
+    cursor: pointer;
 }
 
 #modal .modalinner {
@@ -497,22 +498,13 @@ body::-webkit-scrollbar {
     width: 500px;
 }
 
-#modal .modal-4 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#modal .modal-4 img {
-    display: block;
-    width: 500px;
-}
-
 #modal .modalinner .madal-txt {
     font-size: 16px;
     padding-left: 30px;
     padding-top: 10px;
+}
+#modal .modalinner img {
+    margin: 30px auto 10px;
 }
 
 /* // Portfolio */

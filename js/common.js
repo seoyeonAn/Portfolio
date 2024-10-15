@@ -62,10 +62,4 @@ $(document).ready(function(){
     $('#modal > .exit').click(function(){
       $(".modal3, .modal-3").fadeOut();
     });
-    $("#portfolio .tab2_item > li > .lst-imagse > .lst-item4").click(function(){
-      $(".modal4, .modal-4").fadeIn();
-  });
-    $('#modal > .exit').click(function(){
-      $(".modal4, .modal-4").fadeOut();
-    });
 });
